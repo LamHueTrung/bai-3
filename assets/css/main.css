@@ -168,6 +168,9 @@
     position: relative;
     display: none;
 }
+.noidung-baitap span {
+    display: block;
+}
 .noidung-baitap::after {
     content: "";
     border-width: 20px 27px;
@@ -175,6 +178,6 @@
     border-color: transparent #6900ff transparent transparent;
     margin-left: -52px;
     float: left;
-    margin-top: -8px;
+    margin-top: 0px;
    
 }
