@@ -18,31 +18,113 @@
             <li class="header_items">
                 <a href="https://lamhuetrung.github.io/index.html">
                     <i class="fas fa-home"></i>
-                    <span>Home</span>
+                    <span></span>
                 </a>
             </li>
            
             <li class="header_items">
                 <a href="#bai-tap">
                     <i class="fas fa-book"></i>
-                    <span>Bài tập</span>
+                    <span></span>
                 </a>
             </li>
             <li class="header_items">
                 <a href="https://www.facebook.com/T%E1%BB%B1-h%E1%BB%8Dc-l%E1%BA%ADp-Tr%C3%ACnh-c%C3%B9ng-LHT-110968584718753">
                     <i class="fas fa-question"></i>
-                    <span>Hỏi</span>
+                    <span></span>
                 </a>
             </li>
         </ul>
     </header>
     <div class="container">
-        <h1>Vòng lặp for </h1>
+        <div class="gird__column-2">
+            <div class="content_LT">
+                <div class="content__BT">
+                    <h1 class="BT__tieu-de">Project</h1>
+                    <span class="BT__noi-dung">Bạn hãy viết chương trình nhập vào từ bàn phím số nguyên n và hiển thị ra tổng từ 1 tới n:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">Input: n = 5</code>
+                    </pre>
+                    <span class="BT__noi-dung"></span>
+                    <pre class="BT__output">
+                        <code class="BT__output">Output: 10</code>
+                    </pre>
+                    <h1 class="BT__tieu-de">Lý Thuyết</h1>
+                    <span class="BT__noi-dung">Bài này sẽ được giải bằng vòng lặp for. Cách đơn giản nhất để hiểu được vòng lặp trong C là xem nhiều các ví dụ.</span>
+                    <span class="BT__noi-dung">Ví dụ về chương trình sử dụng vòng lặp for để in ra các số từ 1 tới 5:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+#include < stdio.h >
+
+int main() {
+    // i++ tương đương với i = i + 1 hoặc i += 1
+    for (int i = 1; i <= 5; i++) {
+        printf("%d ", i);
+    }
+    return 0;
+}
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Kết quả khi chạy chương trình:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+1 2 3 4 5 
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Ví dụ về chương trình sử dụng vòng lặp for để in ra các số từ 10 về 1:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+#include < stdio.h >
+
+int main() {
+    // i-- tương đương với i = i - 1 hoặc i -= 1
+    for (int i = 10; i > 0; i--) {
+        printf("%d ", i);
+    }
+    return 0;
+}
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Kết quả khi chạy chương trình:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+10 9 8 7 6 5 4 3 2 1
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Ví dụ về chương trình sử dụng vòng lặp for để in ra tổng từ 1 tới 5:</span>
+                    <pre class="BT__output">
+                        <code class="BT__output">
+#include < stdio.h >
+
+int main() {
+    int n = 5;
+    int sum = 0;
+    for (int i = 1; i <= 5; i++) {
+        sum += i;
+    }
+    printf("sum = %d", sum);
+    return 0;
+}
+                        </code>
+                    </pre>
+                    <span class="BT__noi-dung">Kết quả khi chạy chương trình:</span>
+                    <pre class="BT__output-1">
+                        <code class="BT__output">
+sum = 15
+                    </code>
+                    </pre>
+                    <span class="BT__noi-dung">Đọc tới đây bạn đã biết cách sử dụng vòng lặp for, hãy quay lại phần bài tập và làm thử.</span>
+                    
+                </div>
+            </div>
+            <div class="content__HD">
+                <h1>Vòng lặp for </h1>
         <video class="video" controls>
             <source src="./assets/video/video.webm" type="video/mp4">
         </video>
-        <a href="https://lamhuetrung.github.io/bai-4/" class="btn-next">Bài tiếp theo</a>
+        <a class="btn-next not-next">Bài tiếp theo</a>
         <div class="container__note">
+            <h2>Đoạn code trên mình viết sai 1 chỗ nhé: for(int i = 1; i <= n; i++) => Viết như vậy mới đúng mình thử xem các bạn có nhận ra không đấy nhé (-,-)</h2>
             <h2>Nhắc nhở: có các bài tập nhé.</h2>
         </div>
         <div class="container__learn" id="bai-tap">  
@@ -61,9 +143,6 @@
                         nhập vào số nguyên n và in ra màn hình lũy thừa cuả n.
                     </span>
                 </div>
-                <!-- <a class="learn__slide-1">Bài tập 2</a>
-                <a class="learn__slide-1">Bài tập 3</a>
-                <a class="learn__slide-1">Bài tập 4</a> -->
                 
             </div>
         </div>
